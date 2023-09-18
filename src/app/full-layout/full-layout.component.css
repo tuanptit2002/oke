@@ -1,0 +1,32 @@
+
+/* Điều chỉnh màu nền cho toolbar và sidenav */
+mat-toolbar {
+  background-color: #2196F3; /* Màu nền toolbar */
+}
+
+mat-sidenav {
+  background-color: #333; /* Màu nền sidenav */
+  color: white; /* Màu chữ cho sidenav */
+}
+
+/* Điều chỉnh màu và khoảng cách của nút menu */
+button.mat-icon-button {
+  margin-left: 10px; /* Khoảng cách từ nút menu đến cạnh trái */
+  color: white; /* Màu biểu tượng menu */
+}
+
+/* Điều chỉnh màu cho các liên kết trong menu */
+.menu-a {
+  color: white; /* Màu chữ cho liên kết */
+  text-decoration: none; /* Loại bỏ gạch chân mặc định */
+  margin-right: 10px; /* Khoảng cách giữa các liên kết */
+}
+
+/* Điều chỉnh màu cho liên kết được kích hoạt */
+.menu-a.active-list-item {
+  background-color: #FF5722; /* Màu nền khi liên kết được kích hoạt */
+  color: white; /* Màu chữ khi liên kết được kích hoạt */
+}
+/*.example-spacer {*/
+/*  flex: 1 1 auto;*/
+/*}*/

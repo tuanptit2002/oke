@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Biểu mẫu Describe và Total</title>
+</head>
+<body>
+<h1>Create Item</h1>
+
+<form #item = "ngForm" (ngSubmit)="onSubmit(item)">
+  <label for="price">Price:</label>
+  <input type="text" id="price" name="price" ngModel><br><br>
+
+  <label for="name">Name :</label>
+  <input type="text" id="name" name="name" ngModel><br><br>
+
+  <label for="image">Image :</label>
+  <input type="text" id="image" name="image" ngModel><br><br>
+  <label for="image">Category :</label>
+  <mat-form-field >
+    <mat-select name="category" [(ngModel)]="selectedCategory">
+      <mat-option *ngFor="let data of category" value="{{data.describeItem}}" >{{data.describeItem}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button type="submit">Edit</button>
+</form>
+</body>
+</html>

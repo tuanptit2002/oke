@@ -1,0 +1,10 @@
+<form #mail="ngForm" (ngSubmit)="onSubmit(mail)" class="row g-3">
+<label class="form-label" for="typeEmail">Người nhận:</label>
+<input name="recipient" type="email" id="typeEmail" class="form-control" ngModel>
+<label>Tiêu đề:</label>
+<input name="msgBody" class="form-control" ngModel>
+<label>Nội dung:</label>
+  <textarea name="subject" ngModel></textarea>
+
+  <button type="submit">Send</button>
+</form>

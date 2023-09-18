@@ -1,0 +1,80 @@
+/* Định dạng bảng */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Định dạng tiêu đề cột */
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Định dạng dòng dữ liệu */
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Định dạng dòng chẵn */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+
+}
+
+
+/* Định dạng cho nút "Delete" */
+.edit-button {
+  padding: 5px 10px;
+  background-color: #007bff; /* Màu xanh cho nút "Edit" */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+/* Styling for the "Detail" button */
+.detail-button {
+  background-color: #3498db; /* Set background color */
+  color: #fff; /* Set text color */
+  padding: 5px 20px; /* Add padding to the button */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Change cursor on hover to indicate it's clickable */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Styling for the "Create" button */
+.create-button {
+  background-color: #27ae60; /* Set background color */
+  color: #fff; /* Set text color */
+  padding: 20px 20px; /* Add padding to the button */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Change cursor on hover to indicate it's clickable */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Hover effect for both buttons */
+.detail-button:hover, .create-button:hover {
+  opacity: 0.8; /* Reduce opacity on hover for a subtle effect */
+}
+/* Định dạng cho nút "Delete" */
+.delete-button {
+  padding: 5px 10px;
+  background-color: #ff0000; /* Màu đỏ cho nút "Delete" */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+

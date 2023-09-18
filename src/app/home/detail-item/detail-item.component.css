@@ -1,0 +1,60 @@
+/* Định dạng phần tử h1 (tiêu đề) */
+h1 {
+  text-align: center;
+}
+
+/* Định dạng phần tử form */
+form {
+  max-width: 500px; /* Giới hạn chiều rộng của form */
+  margin: 0 auto; /* Canh giữa form */
+  padding: 20px; /* Khoảng cách bên trong form */
+}
+
+/* Định dạng nhãn (label) */
+label {
+  display: block; /* Hiển thị nhãn dưới dạng block để chia dòng */
+  font-weight: bold; /* Đậm cho văn bản nhãn */
+  margin-bottom: 5px; /* Khoảng cách dưới của nhãn */
+}
+
+/* Định dạng các ô nhập liệu (input) */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="text"][readonly] {
+  width: 100%; /* 100% chiều rộng của ô nhập liệu */
+  padding: 10px; /* Khoảng cách bên trong ô nhập liệu */
+  margin-bottom: 10px; /* Khoảng cách dưới của ô nhập liệu */
+  border: 1px solid #ccc; /* Đường viền xung quanh ô nhập liệu */
+  border-radius: 5px; /* Bo tròn góc của ô nhập liệu */
+}
+
+/* Định dạng nút "Tính tổng tiền" */
+#calculate-total {
+  background-color: #007bff; /* Màu nền của nút */
+  color: #fff; /* Màu chữ trên nút */
+  padding: 10px 20px; /* Khoảng cách bên trong nút */
+  border: none; /* Loại bỏ đường viền của nút */
+  border-radius: 5px; /* Bo tròn góc của nút */
+  cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+}
+
+/* Định dạng nút "Tính tổng tiền" khi di chuột qua (hover) */
+#calculate-total:hover {
+  background-color: #0056b3; /* Màu nền thay đổi khi di chuột qua nút */
+}
+
+/* Định dạng nút "Gửi hóa đơn" */
+[type="submit"] {
+  background-color: #28a745; /* Màu nền của nút */
+  color: #fff; /* Màu chữ trên nút */
+  padding: 10px 20px; /* Khoảng cách bên trong nút */
+  border: none; /* Loại bỏ đường viền của nút */
+  border-radius: 5px; /* Bo tròn góc của nút */
+  cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua nút */
+}
+
+/* Định dạng nút "Gửi hóa đơn" khi di chuột qua (hover) */
+[type="submit"]:hover {
+  background-color: #218838; /* Màu nền thay đổi khi di chuột qua nút */
+}

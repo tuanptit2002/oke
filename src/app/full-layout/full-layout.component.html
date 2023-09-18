@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+
+    <div class="d-flex flex-row">
+
+      <button mat-icon-button hidden>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+
+      <span class="menu-spacer"></span>
+      <div class="mat-menu-toolbar">
+        <a mat-button routerLink="category" routerLinkActive="active-list-item" class="menu-a"> Category</a>
+        <a mat-button routerLink="item" routerLinkActive="active-list-item" class="menu-a"> Item</a>
+        <a mat-button routerLink="home" routerLinkActive="active-list-item" class="menu-a"> Home</a>
+        <a mat-button routerLink="report" routerLinkActive="active-list-item" class="menu-a"> Report</a>
+        <a mat-button routerLink="mail" routerLinkActive="active-list-item" class="menu-a">Gmail</a>
+      </div>
+
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content class="gray-background app-body cat__content">
+    <div class="container-fluid pt-3 pb-3">
+
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+

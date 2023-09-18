@@ -1,0 +1,83 @@
+/*table {*/
+/*  width: 100%;*/
+/*}*/
+/*!* Tạo kiểu cho nút (button) bên trong ô (td) *!*/
+/*.edit-button {*/
+/*  background-color: #007bff; !* Màu nền của nút *!*/
+/*  color: #fff; !* Màu chữ trên nút *!*/
+/*  padding: 5px 10px; !* Khoảng cách bên trong nút *!*/
+/*  border: none; !* Loại bỏ đường viền của nút *!*/
+/*  cursor: pointer; !* Biến con trỏ thành hình bàn tay khi di chuột qua nút *!*/
+/*  border-radius: 3px; !* Bo tròn các góc của nút *!*/
+/*}*/
+
+/*!* Tạo kiểu cho nút khi di chuột qua (hover) *!*/
+/*.edit-button:hover {*/
+/*  background-color: #0056b3; !* Màu nền thay đổi khi di chuột qua nút *!*/
+/*}*/
+/* Styles for the container */
+.container {
+  max-width: 1200px; /* Adjust the container width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+/* Styles for the search input */
+.search-hero {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-control::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.form-control:hover,
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styles for the table */
+.mat-elevation-z8 {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Styles for the table headers */
+th.mat-header-cell {
+  background-color: #007bff; /* Header background color */
+  color: white; /* Header text color */
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Styles for the table cells */
+td.mat-cell {
+  padding: 10px;
+}
+
+/* Styles for the "Mua" button */
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

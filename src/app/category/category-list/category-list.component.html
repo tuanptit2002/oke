@@ -1,0 +1,30 @@
+<form>
+  <button class="create-button" [routerLink]="['create']">Create</button>
+
+<table class="table">
+
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Describe</th>
+    <th scope="col">Total</th>
+    <th scope="col">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let category of category">
+    <th scope="row">{{category.id}}</th>
+    <td>{{category.describeItem}}</td>
+    <td>{{category.totalItem}}</td>
+    <td>
+      <button class="edit-button"  [routerLink]= "['edit',category.id]">Edit</button>
+      <button class="delete-button" (click)="deleteCategory(category.id)">Delete</button>
+<!--      <button class="detail-button">Detail</button>-->
+
+    </td>
+
+  </tr>
+
+  </tbody>
+</table>
+</form>

@@ -1,0 +1,41 @@
+/* Định dạng chung cho form và các phần tử bên trong nó */
+form {
+  max-width: 400px; /* Đặt chiều rộng tối đa cho form */
+  margin: 0 auto; /* Canh giữa form */
+  padding: 20px; /* Khoảng cách nội dung bên trong form */
+}
+
+label {
+  font-weight: bold; /* Đặt độ đậm cho nhãn label */
+}
+
+input[type="email"],
+input[type="text"],
+input[name="msgBody"] {
+  width: 100%; /* Đặt chiều rộng của input tiêu đề là 100% */
+  padding: 10px; /* Khoảng cách nội dung bên trong input tiêu đề */
+  margin: 0 auto; /* Canh giữa input tiêu đề */
+  border: 1px solid #ccc; /* Viền của input tiêu đề */
+  border-radius: 4px; /* Độ cong viền */
+}
+textarea {
+  width: 100%; /* Đặt chiều rộng của input và textarea là 100% */
+  padding: 10px; /* Khoảng cách nội dung bên trong input và textarea */
+  margin-bottom: 15px; /* Khoảng cách dưới cùng của input và textarea */
+  border: 1px solid #ccc; /* Viền input và textarea */
+  border-radius: 4px; /* Độ cong viền */
+}
+
+button[type="submit"] {
+  background-color: #007bff; /* Màu nền cho nút Submit */
+  color: #fff; /* Màu chữ cho nút Submit */
+  padding: 10px 20px; /* Kích thước nút */
+  border: none; /* Loại bỏ viền */
+  border-radius: 4px; /* Độ cong viền */
+  cursor: pointer; /* Biểu tượng chuột khi trỏ vào nút */
+}
+
+/* Định dạng cho nút Submit khi được hover */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}

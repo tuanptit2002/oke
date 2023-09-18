@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bill Form</title>
+</head>
+<body>
+<h1>Bill Form</h1>
+<form id="bill-form" #bill = "ngForm" (ngSubmit)="onSubmit(bill)">
+
+  <label>Tên sản phẩm: {{item.name}}</label>
+  <label for="quantity">Số lượng:</label>
+  <input type="number" id="quantity" name="quantity" [(ngModel)]="quantity" (change)="updateTotalAmount()" placeholder="1" ngModel/>
+  <label >Tổng tiền: <span id="totalPrice" >{{item.price}}</span></label>
+  <label for="street">Street:</label>
+  <input type="text" id="street" name="street" ngModel>
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" name="phone" ngModel>
+  <label for="date">Date:</label>
+  <input type="text" id="date" name="date" placeholder="dd/MM/yyyy" ngModel>
+  <button type="submit">Xác nhận mua</button>
+</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,22 @@
+<form class="container col-md-12">
+  <h1  style="color: red" >Đăng Ký</h1>
+<form #registrationForm="ngForm" (ngSubmit)="registerUser(registrationForm)">
+  <div class="mb-3">
+    <label class="form-label">Full Name:</label>
+    <input type="text" class="form-control" name="user_name" ngModel required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email:</label>
+    <input type="email" class="form-control" name="email" ngModel required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password:</label>
+    <input type="password" class="form-control" name="password" ngModel required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Phone:</label>
+    <input type="text" class="form-control" name="mobile_number" ngModel required>
+  </div>
+  <button type="submit" class="btn btn-primary">Đăng ký</button>
+</form>
+</form>
